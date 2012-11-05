@@ -1,8 +1,8 @@
-# EasyAuth-Github #
+# EasyAuth-Twitter #
 
-[![Build Status](https://secure.travis-ci.org/dockyard/easy_auth-github.png?branch=master)](http://travis-ci.org/dockyard/easy_auth-github)
-[![Dependency Status](https://gemnasium.com/dockyard/easy_auth-github.png?travis)](https://gemnasium.com/dockyard/easy_auth-github)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/easy_auth-github)
+[![Build Status](https://secure.travis-ci.org/dockyard/easy_auth-twitter.png?branch=master)](http://travis-ci.org/dockyard/easy_auth-twitter)
+[![Dependency Status](https://gemnasium.com/dockyard/easy_auth-twitter.png?travis)](https://gemnasium.com/dockyard/easy_auth-twitter)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/twitter/dockyard/easy_auth-twitter)
 
 Dead simple drop in authentication for Rails
 
@@ -11,13 +11,13 @@ Dead simple drop in authentication for Rails
 In your Gemfile add the following:
 
 ```ruby
-gem 'easy_auth-github'
+gem 'easy_auth-twitter'
 ```
 
 After running Bundler you'll need to install the migrations
 
 ```ruby
-rake easy_auth-github:install:migrations
+rake easy_auth-twitter:install:migrations
 ```
 
 Then run your migrations.
