@@ -1,11 +1,13 @@
 module EasyAuth::Models::Identities::Oauth::Twitter
- def authorize_path
+  def account_attributes_map
+    { :username => 'screen_name', :screen_name => 'screen_name' }
+  end
+
+  def authorize_path
     '/oauth/authenticate'
   end
 
-  private
-
-  def retrieve_username(token)
+  def retrieve_uid(token)
     token.params[:user_id]
   end
 

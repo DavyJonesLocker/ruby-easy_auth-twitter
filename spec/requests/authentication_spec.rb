@@ -11,9 +11,9 @@ feature 'Twitter OAuth Authentication', :js do
   end
 
   scenario 'Handling a Twitter callback' do
-    visit oauth_callback_path(:provider => :twitter, :oauth_token => 'test-auth-code')
+    visit oauth_callback_path(:provider => :twitter, :oauth_token => 'test-auth-token')
 
     current_path.should eq dashboard_path
-    page.should have_content '123456789'
+    page.should have_content 'test_user'
   end
 end
