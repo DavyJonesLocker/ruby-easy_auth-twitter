@@ -7,8 +7,8 @@ module EasyAuth::Models::Identities::Oauth::Twitter
     '/oauth/authenticate'
   end
 
-  def retrieve_uid(token)
-    token.params[:user_id]
+  def retrieve_uid(user_attributes)
+    user_attributes[:user_id]
   end
 
   def site_url

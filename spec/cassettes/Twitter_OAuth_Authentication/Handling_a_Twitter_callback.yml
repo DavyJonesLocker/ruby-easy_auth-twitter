@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/oauth/access_token
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '0'
+      Authorization:
+      - OAuth oauth_body_hash="2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D", oauth_consumer_key="GPiQ0E0VvTWyRfYGz5TRjQ",
+        oauth_nonce="sFgmz9LWt2DnASo6uJkeO4A0CYn8tVScPNXfR7UI55Y", oauth_signature="a1CsrOgxfC7YCBL6TDsykOBwweg%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1394521973", oauth_token="test-auth-token",
+        oauth_verifier="test-verifier-token", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+    headers:
+      date:
+      - Mon, 15 Oct 2012 13:06:48 GMT
+      status:
+      - 200 OK
+      cache-control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      content-length:
+      - '136'
+      content-type:
+      - text/html; charset=utf-8
+      www-authenticate:
+      - OAuth realm="https://api.twitter.com"
+      expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      pragma:
+      - no-cache
+      x-transaction:
+      - b77fb9312a1d1afb
+      last-modified:
+      - Mon, 15 Oct 2012 13:06:48 GMT
+      x-frame-options:
+      - SAMEORIGIN
+      x-mid:
+      - cfcda409e707411297f9829508fb14d56076e8e9
+      set-cookie:
+      - k=10.36.36.110.1350306408632143; path=/; expires=Mon, 22-Oct-12 13:06:48 GMT;
+        domain=.twitter.com
+      - guest_id=v1%3A135030640864583453; domain=.twitter.com; path=/; expires=Thu,
+        16-Oct-2014 01:06:48 GMT
+      vary:
+      - Accept-Encoding
+      server:
+      - tfe
+    body:
+      encoding: US-ASCII
+      string: ! "oauth_token=test-oauth-token&oauth_token_secret=dummy-secret&user_id=123456789&screen_name=test_user"
+    http_version: '1.1'
+  recorded_at: Tue, 11 Mar 2014 07:12:53 GMT
+recorded_with: VCR 2.8.0

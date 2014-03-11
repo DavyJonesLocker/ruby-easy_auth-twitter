@@ -1,9 +1,7 @@
 require 'spec_helper'
 
-feature 'Twitter OAuth Authentication', :js do
-  use_vcr_cassette 'twitter_oauth', :match_requests_on => [:uri], :decode_compressed_response => true
-
-  scenario 'Twitter link redirects to the Twitter OAuth url' do
+feature 'Twitter OAuth Authentication', :js, :vcr do
+ scenario 'Twitter link redirects to the Twitter OAuth url' do
     visit root_path
 
     click_link 'Twitter'
@@ -11,7 +9,7 @@ feature 'Twitter OAuth Authentication', :js do
   end
 
   scenario 'Handling a Twitter callback' do
-    visit oauth_callback_path(:provider => :twitter, :oauth_token => 'test-auth-token')
+    visit oauth_callback_path(:provider => :twitter, :oauth_token => 'test-auth-token', oauth_verifier: 'test-verifier-token')
 
     current_path.should eq dashboard_path
     page.should have_content 'test_user'
