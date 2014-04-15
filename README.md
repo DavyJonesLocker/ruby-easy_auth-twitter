@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/dockyard/easy_auth-twitter.png?branch=master)](http://travis-ci.org/dockyard/easy_auth-twitter)
 [![Dependency Status](https://gemnasium.com/dockyard/easy_auth-twitter.png?travis)](https://gemnasium.com/dockyard/easy_auth-twitter)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/twitter/dockyard/easy_auth-twitter)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/easy_auth-twitter)
 
 Dead simple drop in authentication for Rails
 
@@ -39,7 +39,7 @@ Don't use tabs to indent, two spaces are the standard.
 
 ## Legal ##
 
-[DockYard](http://dockyard.com), LLC &copy; 2012
+[DockYard](http://dockyard.com) Inc. &copy; 2014
 
 [@dockyard](http://twitter.com/dockyard)
 
