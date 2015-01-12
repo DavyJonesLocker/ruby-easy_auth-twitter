@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = EasyAuth::Twitter::VERSION
   s.authors     = ['Brian Cardarella', 'Dan McClain']
   s.email       = ['brian@dockyard.com', 'bcardarella@gmail.com', 'rubygems@danmcclain.net']
-  s.homepage    = 'https://twitter.com/dockyard/easy_auth-twitter'
+  s.homepage    = 'https://github.com/dockyard/ruby-easy_auth-twitter'
   s.summary     = 'EasyAuth-Twitter'
   s.description = 'EasyAuth-Twitter'
 
